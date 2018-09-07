@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html> 
+  <head>
+  	<title>JXC- New Customer {{ name }}</title>
+  	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='centered2.css') }}">
+  	<!--<meta HTTP-EQUIV="REFRESH" content="0; url=welcome.html">-->
+   </head>
+ <body>
+  <div class = "header-cont">
+  <div class = "header">
+   <h1 align = "center" > Hello, {{ name }}! </h1>
+   <!--<h2 align = "center"> Please wait until face detection finishes centerheader class for h1</h2>-->
+    </div>
+   </div>
+   <div class = "centered-thing">
+   <div id = "loader" class = "loader"> </div>
+    </div>
+    <img src="{{ url_for('video_feedFD') }}" class = "centerPic">
+    <!--    <div class="centered">-->
+    <div class="btn-group">
+    <div class="centeredLowLow">
+        <form action = "/welcome/" method = "GET">
+          <button name = "finish" type = "submit" id="finish">Finish facial detection!</button>
+        </form>
+      </div>
+    </div>
+
+    <img src = "{{ url_for('static',filename='FRlogo.png') }}" width="100" class = "bottomleft" >
+  <img src = "{{ url_for('static',filename='jda_rgb.png') }}" width="100" class ="bottomright">
+ </body> 
+ <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+ <script>
+    $(document).ready(function() {
+      $('#finish').hide().delay(10000).fadeIn(2200);
+    });
+    </script>
+  <script>
+    $(document).ready(function() {
+      $('#loader').show().delay(5000).fadeOut(100);
+    });
+  </script>
+
+</html> 

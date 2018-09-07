@@ -1,0 +1,21 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>JXC- Old Customer</title>
+  	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='centered2.css') }}">
+   </head>
+
+  	<body>
+  		<h1 align = "center">Please wait as camera loads....</h1>
+
+    <div class = "btn-group">
+        <form action = "/" method = "GET">
+          <button name = "previous" type = "submit">Previous</button>
+        </form>
+    </div>
+    <img src = "{{ url_for('static',filename='FRlogo.png') }}" width="100" class = "bottomleft" >
+  <img src = "{{ url_for('static',filename='jda_rgb.png') }}" width="100" class ="bottomright">
+    </body>
+</html>

@@ -1,0 +1,7 @@
+
+Directions for creating a cron job on Windows 10: 
+1. Start > Task Scheduler > Create Task
+2. Name it > check "Run whether user is logged on or not" and "Run with Highest Privileges" > Configure for Windows 10
+3. Go to Triggers Tab > New > Check Daily > Make the time 12AM > OK
+4. Go to Actions Tab > New > Ponit to script location > OK
+5. Test to make sure it runs

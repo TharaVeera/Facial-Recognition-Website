@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>JXC</title>
+  	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='centered2.css') }}"> <!--{{ url_for('static',filename='centered2.css') }}-->
+   </head>
+  	<body>
+    <h1 align = "center" class = "startHeader"> Retry facial recognition? </h1>
+     <!--<h1 id="reload" class="centered"> Please wait for program to reload... </h1>-->
+    <div class="btn-group">
+      <div class="centered">
+        <div class="floatLeft">
+        <form action = "/no/" method = "GET">
+          <button  = "yes" type = "submit" id="yesButton">Yes try again!</button>
+        </form>
+        </div>
+        <div class="floatRight">
+        <form action = "/welcomeUK/" method = "GET">
+          <button name = "no" type = "submit" id="noButton">No - let me into the JXC!</button>
+        </form>
+      </div>
+    </div>
+    </div>
+      <img src = "{{ url_for('static',filename='FRlogo.png') }}" width="100" class = "bottomleft" >
+  <img src = "{{ url_for('static',filename='jda_rgb.png') }}" width="100" class ="bottomright">
+    </body>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      $('#yesButton').hide().delay(1700).fadeIn(2200);
+});
+    </script>
+    <script>
+    $(document).ready(function() {
+      $('#noButton').hide().delay(1700).fadeIn(2200);
+});
+    </script>
+    <script>
+      $(document).ready(function() {
+        $('#reload').show().delay(1700).fadeOut(2200);
+      });
+    </script>
+</html>

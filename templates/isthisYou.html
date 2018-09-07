@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>JXC</title>
+  	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='centered2.css') }}">
+   </head>
+  	<body>
+    <div class = "header-cont">
+      <div class = "header">
+      <h1 align = "center" > Is this you? </h1>
+        </div>
+      </div>
+    <div class = "centered-thing">
+    <div id = "loader" class = "loader"> </div>
+    </div>
+      <img src="{{ url_for('video_feedFR') }}" class="centerPic">
+      <div class="centeredLowLow">
+      <div class="btn-group">
+        <div class="floatLeft">
+        <form action = "/welcome/" method = "GET">
+          <button  = "yes" type = "submit">Yes - let me into the JXC! </button>
+        </form>
+      </div>
+      <div class="floatRight">
+        <form action = "{{ url_for('restartFR') }}" method = "GET">
+          <button name = "no" type = "submit">No</button>
+        </form>
+      </div>
+  </div>
+</div>
+  <img src = "{{ url_for('static',filename='FRlogo.png') }}" width="100" class = "bottomleft" >
+  <img src = "{{ url_for('static',filename='jda_rgb.png') }}" width="100" class ="bottomright">
+
+    </body>
+      <script>
+    $(document).ready(function() {
+      $('#loader').show().delay(5000).fadeOut(100);
+    });
+    </script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>JXC- New Customer</title>
+  	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='centered2.css') }}">
+   </head>
+  	<body>
+    <div class = "welcHeader-cont">
+    <div class = "welcHeader">
+  		<h1 align = "center"> Welcome to to the JXC {{ name }}! </h1>
+      </div>
+      </div>
+      <img src='chrome-extension://gcdijgjnopkpnlhemllbbdaokhcplpcn/customerImage.jpg' class = 'centered-thing'> <!--   FILES CAN ONLY BE UPLOADED WITH CHROME EXTENSION -->
+  		<form action = "/" method = "GET">
+        <div class = "centeredLowLow" />
+        <div class = "btn-group" >
+          <button name = "Home" type = "submit">Back to Home</button>
+          <!-- <input type = "submit" value = "Back to Home"> -->
+        </div>  
+      </div> 
+        </form>
+     <img src = "{{ url_for('static',filename='FRlogo.png') }}" width="100" class = "bottomleft" >
+  <img src = "{{ url_for('static',filename='jda_rgb.png') }}" width="100" class ="bottomright">
+    </body>
+</html>

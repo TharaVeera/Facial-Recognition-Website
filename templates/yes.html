@@ -1,0 +1,38 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>JXC- New Customer</title>
+  	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='centered2.css') }}">
+   </head>
+
+  	<body>
+      <img src = "images/jda_rgb.png" width="100" class = "bottomright" >
+  		<h1 align = "center" class = "startHeader" >Please enter your full name and company.</h1>
+  		<div class = "centered">
+    	  		<form action = "/yes/streamFD/" method = "POST" >
+      			  <input id = "name" type="text" placeholder = "Full Name" required name = "Name" >
+      			  <input id = "company" type="text"  placeholder="Company" required name = "Company">
+              <div class="btn-group" >
+                <div class="centered" >
+                  <button name = "submit" type = "submit">Submit</button>
+                </div>
+            </div>
+        </div>
+			</form>
+		</div>
+
+    
+        <form action = "/" method = "GET">
+        <div class = "btn-group">
+              <button name = "previous" type = "submit">Previous</button>
+            </form>
+        </div>
+
+        <img src = "{{ url_for('static',filename='FRlogo.png') }}" width="100" class = "bottomleft" >
+  <img src = "{{ url_for('static',filename='jda_rgb.png') }}" width="100" class ="bottomright">
+
+    </body>
+</html>

@@ -1,0 +1,16 @@
+
+Upload image to chrome browser to local: 
+1. In folder where images stored( i.e. 'tempImages'), create this file called manifest.json
+	{
+	  "name": "File Exposer",
+	  "manifest_version": 2,
+	  "version": "1.0",
+	  "web_accessible_resources": ["*.jpg","*.JPG"]
+	}
+2. Put this in chrome address bar: chrome://extensions/
+3. Check 'Developer mode' in top right of page
+4. Click the "Load Unpacked" button
+5. Navigate to local folder where images(s) and the manifest.json file is, and click ok.
+6. 'File exposer' extension is now in list, and check. 
+7. There is an 'ID' string that is on the extension. This is EXTENSION_ID. 
+8. In the HTML you can access the file with: <img src='chrome-extension://EXTENSION_ID/example1.jpg'>
