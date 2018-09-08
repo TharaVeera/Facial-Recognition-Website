@@ -32,7 +32,6 @@ Scripts explained: <br/>
 -facedataset.py - NOT used in main.py. It takes pictures and stores them without using the main website. Can be run separately. <br/>
 -facetraining.py - NOT used in main.py, but used as a cron job. Can be run separately to train over pictures. <br/>
 -haarcascade_frontalface_default - You will need this in your src folder to do any kind of facial detection/recogntion. <br/>
--linkedin.py- INCOMPLETE. NOT used in main.py Explores the default LinkedIn API. Don't use any github LinkedIn libraries; they don't work.<br/>
 -picCron.py - NOT used in main.py, but used as a cron job. This uploads references to pictures stored on computer to the database. <br/>
 -sendImages.sh - This is a shell script run on the pi. When the local website wants to begin livestream, it triggers serverListener.py to run. <br/>
 -serverListener.py - This must always be running on the pi to work. It listens for the local website to send a signal to start the livestream. <br/>
