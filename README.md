@@ -25,9 +25,9 @@ to the templates/welcomeUK and templates/welcome html files.
 12. Then, type in localhost:5000 into chrome. 
 
 
-Scripts explained: 
--client.py - Live streams video to your computer
--DAO.py - Represents the Data Access Object. Inserts/Updates to database upon facial detection and facial recognition. 
+Scripts explained: <br/>
+-client.py - Live streams video to your computer <br/>
+-DAO.py - Represents the Data Access Object. Inserts/Updates to database upon facial detection and facial recognition. <br/>
 -faceArray.py - Creates the array of names attached to customer. Also allows you to get a new ID when there is a new customer. 
 -facedataset.py - NOT used in main.py. It takes pictures and stores them without using the main website. Can be run separately. 
 -facetraining.py - NOT used in main.py, but used as a cron job. Can be run separately to train over pictures. 
