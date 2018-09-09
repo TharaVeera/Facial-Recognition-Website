@@ -26,7 +26,7 @@ to the templates/welcomeUK and templates/welcome html files.
 
 
 Scripts explained: <br/>
--client.py - Live streams video to your computer <br/>
+-*client.py* - Live streams video to your computer <br/>
 -DAO.py - Represents the Data Access Object. Inserts/Updates to database upon facial detection and facial recognition. <br/>
 -faceArray.py - Creates the array of names attached to customer. Also allows you to get a new ID when there is a new customer. <br/>
 -facedataset.py - NOT used in main.py. It takes pictures and stores them without using the main website. Can be run separately. <br/>
