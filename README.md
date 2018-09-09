@@ -39,7 +39,7 @@ Scripts explained: <br/>
 <br/>
 Folders explained: <br/>
 *dataset*- This is where the facial detection phase stores the images for each customer. <br/>
-*static* - This is where the css file and the images are stored for the website. <br/>
+*static* - This is where the CSS files and the images are stored for the website. <br/>
 *tempImages* - This folder is used to store a temporary image of a customer to put on the welcome pages. It is deleted when the website returns to home. <br/>
 *templates* - This is where all the templates/web pages are stored for the website. <br/>
 *trainer* - This is the output from the facetraining.py file. It is read during the face recognition phase.<br/>
